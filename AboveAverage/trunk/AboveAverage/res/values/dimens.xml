@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message">14dp</dimen>
+    <dimen name="menu">16dp</dimen>
+    <dimen name="title">22dp</dimen>
+</resources>

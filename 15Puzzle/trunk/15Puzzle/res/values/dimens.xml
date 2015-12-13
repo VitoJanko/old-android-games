@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="new_game">24dp</dimen>
+    <dimen name="menu_item">16dp</dimen>
+    <dimen name="choiche">22dp</dimen>
+    <dimen name="HighScore">22dp</dimen>
+    <dimen name="numbers">13dp</dimen>
+    <dimen name="try_new_game">18dp</dimen>
+</resources>

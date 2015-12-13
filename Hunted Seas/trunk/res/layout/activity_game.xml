@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity" >
+
+    <FrameLayout 
+    android:id="@+id/gameViewLayout" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+    
+    
+	   <android.opengl.GLSurfaceView
+	       android:id="@+id/GameSurfaceView" 
+	       android:layout_width="match_parent" 
+	       android:layout_height="match_parent">
+	   </android.opengl.GLSurfaceView>
+	
+	   <RelativeLayout
+	       android:id="@+id/game_hud"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical" >
+	
+	       <RelativeLayout
+	           android:id="@+id/player_health_layout"
+	           android:layout_margin="10dp"
+       	       android:layout_width="match_parent"
+	      	   android:layout_height="wrap_content">
+
+	           <ImageView
+	               android:id="@+id/hp1"
+	               android:layout_width="16dp"
+	               android:layout_height="16dp"
+	               android:layout_alignParentLeft="true"
+	               android:scaleType="fitCenter"
+	               android:src="@drawable/heart_full" />
+	           	<ImageView
+	               android:id="@+id/hp2"
+	               android:layout_width="16dp"
+	               android:layout_height="16dp"
+	               android:layout_toRightOf="@+id/hp1"
+	               android:scaleType="fitCenter"
+	               android:src="@drawable/heart_full" />
+	          	<ImageView
+	               android:id="@+id/hp3"
+	               android:layout_width="16dp"
+	               android:layout_height="16dp"
+	               android:layout_toRightOf="@+id/hp2"
+	               android:scaleType="fitCenter"
+	               android:src="@drawable/heart_full" />
+	           	<ImageView
+	               android:id="@+id/hp4"
+	               android:layout_width="16dp"
+	               android:layout_height="16dp"
+	               android:layout_toRightOf="@+id/hp3"
+	               android:scaleType="fitCenter"
+	               android:src="@drawable/heart_full" />
+         	   <ImageView
+	               android:id="@+id/hp5"
+	               android:layout_width="16dp"
+	               android:layout_height="16dp"
+	               android:layout_toRightOf="@+id/hp4"
+	               android:scaleType="fitCenter"
+	               android:src="@drawable/heart_full" />
+	           
+	       </RelativeLayout>
+	       <RelativeLayout
+	           android:id="@+id/debugging"
+       	       android:layout_width="match_parent"
+	      	   android:layout_height="wrap_content"
+	      	   android:layout_below="@+id/player_health_layout">
+
+		       <TextView
+		           android:id="@+id/renderer_fps_view"
+		           android:layout_alignParentLeft="true"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           
+		           android:layout_marginLeft="10sp"
+		           
+		           android:textColor="#FFFFFF"
+		           android:text="Render FPS: "
+		           android:textAppearance="?android:attr/textAppearanceMedium" />
+		       
+	     	   <TextView
+		           android:id="@+id/game_fps_view"
+		           android:layout_alignParentRight="true"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           
+		           android:layout_marginRight="10sp"
+		           
+		           android:textColor="#FFFFFF"
+		           android:text="Game FPS: "
+		           android:textAppearance="?android:attr/textAppearanceMedium" />
+	     	   
+	     	   <TextView
+	     	       android:id="@+id/player_health"
+		           android:layout_alignParentLeft="true"
+		           android:layout_below="@+id/renderer_fps_view"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           
+		           android:layout_marginLeft="10sp"
+		           
+		           android:textColor="#FFFFFF"
+		           android:text="HP: 100"
+		           android:textAppearance="?android:attr/textAppearanceMedium" />
+	     	   
+	     	   <TextView
+	     	       android:id="@+id/renderer_type"
+		           android:layout_alignParentLeft="true"
+		           android:layout_below="@+id/player_health"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           
+		           android:layout_marginLeft="10sp"
+		           
+		           android:textColor="#FFFFFF"
+		           android:text="Renderer type: "
+		           android:textAppearance="?android:attr/textAppearanceMedium" />
+	     	   
+	     	   <TextView
+		           android:id="@+id/player_food_count"
+		           android:layout_alignParentRight="true"
+		           android:layout_below="@+id/game_fps_view"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           
+		           android:layout_marginRight="10sp"
+		           
+		           android:textColor="#FFFFFF"
+		           android:text="Food: 0"
+		           android:textAppearance="?android:attr/textAppearanceMedium" />
+			 </RelativeLayout>
+	   </RelativeLayout>
+
+	   <RelativeLayout
+	       android:id="@+id/loading_screen_layout"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:animateLayoutChanges="true"
+	       android:visibility="gone"
+	       >
+     	   
+	       <ImageView 
+	           android:id="@+id/loading_background"
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	           
+	           android:src="@drawable/loading_screen"
+	           android:adjustViewBounds="true"
+	           android:scaleType="centerCrop"
+	           />
+	       
+     	   <ImageView 
+     	       android:id="@+id/loading_image"
+     	       
+	           android:layout_width="75dp"
+	           android:layout_height="75dp"
+	           
+	           android:layout_centerInParent="true"
+	           
+	           android:src="@drawable/loading_image"
+	           />
+	   </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

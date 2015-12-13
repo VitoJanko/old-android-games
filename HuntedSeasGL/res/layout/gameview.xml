@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:id="@+id/gameViewLayout" 
+    android:layout_width="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_height="fill_parent">
+    
+    
+    <org.bizjak.android.GPU.Sea
+        android:id="@+id/Sea" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+    </org.bizjak.android.GPU.Sea>
+
+    <LinearLayout
+        android:id="@+id/gameHud"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FPS: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+</FrameLayout>

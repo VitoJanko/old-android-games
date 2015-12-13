@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="fill_parent" >
+ 
+<ImageView android:id="@+id/ImageView01"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"
+ android:layout_centerHorizontal="true" />
+ 
+ <ScrollView android:id="@+id/scroll"
+	 android:layout_width="fill_parent" android:layout_below="@+id/ImageView01"
+	 android:layout_height="150dp">
+	 
+	 <TextView android:text="@+id/ScrollText" android:id="@+id/ScrollTextNasprotnik"
+	 android:layout_width="fill_parent" android:layout_height="wrap_content"
+	 android:minHeight="100dp" />
+	 
+	 <TextView android:text="@+id/ScrollText" android:id="@+id/ScrollTextNasprotnik"
+	 android:layout_width="fill_parent" android:layout_height="wrap_content"
+	 android:minHeight="100dp" />
+ 
+ </ScrollView>
+ 
+  <TextView android:id="@+id/text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:textColor="#FFF"
+              android:layout_below="@id/scroll"             
+              />
+ 
+   <EditText android:inputType="textMultiLine" android:id="@+id/inputText"
+  android:singleLine="false"
+   android:layout_width="fill_parent" android:layout_height="wrap_content"
+   android:layout_below="@id/scroll" >
+  <requestFocus></requestFocus>
+  </EditText>
+ 
+ <Button android:id="@+id/Button01" android:layout_below="@id/inputText" 
+ android:layout_width="wrap_content" android:layout_height="wrap_content"
+ android:layout_alignParentLeft="true" android:text="Back" />
+ 
+  <Button android:id="@+id/Button02" android:layout_toRightOf="@id/Button01"
+   android:layout_alignBaseline="@id/Button01"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="Reset score" />
+  
+
+ 
+</RelativeLayout>

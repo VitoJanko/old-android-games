@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" >
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Sandbox"
+	        
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        
+	        android:onClick="startLvLSandbox"
+	         />
+	    
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+
+	        android:layout_toRightOf="@+id/button1"
+	        
+	        android:onClick="startLvL1"
+	        android:text="Level 1" />
+
+	    <Button
+	        android:id="@+id/button5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/button2"
+	        android:onClick="startLvL2"
+	        android:text="Level 2" />
+
+	    <Button
+	        android:id="@+id/button6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/button5"
+	        android:onClick="startLvL3"
+	        android:text="Level 3" />
+
+	    <Button
+	        android:id="@+id/button7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/button6"
+	        android:onClick="startLvL4"
+	        android:text="Level 4" />
+
+	    <Button
+	        android:id="@+id/button8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/button7"
+	        android:onClick="startLvL5"
+	        android:text="Level 5" />
+
+	    <Button
+	        android:id="@+id/button9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/button2"
+	        android:layout_below="@+id/button2"
+	        android:onClick="startLvL6"
+	        android:text="Level 6" />
+
+	    <Button
+	        android:id="@+id/button10"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button9"
+	        android:layout_alignBottom="@+id/button9"
+	        android:layout_alignLeft="@+id/button5"
+	        android:onClick="startLvL7"
+	        android:text="Level 7" />
+
+	    <Button
+	        android:id="@+id/button11"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button10"
+	        android:layout_alignBottom="@+id/button10"
+	        android:layout_alignLeft="@+id/button6"
+	        android:onClick="startLvL8"
+	        android:text="Level 8" />
+
+	    <Button
+	        android:id="@+id/button12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/button7"
+	        android:layout_below="@+id/button7"
+	        android:onClick="startLvL9"
+	        android:text="Level 9" />
+
+	    <Button
+	        android:id="@+id/button13"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button12"
+	        android:layout_alignBottom="@+id/button12"
+	        android:layout_alignLeft="@+id/button8"
+	        android:onClick="startLvL10"
+	        android:text="Level 10" />
+
+
+
+  	</RelativeLayout>
+	    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+		
+        <RelativeLayout
+            android:id="@+id/relative_layout_skin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+
+
+            <TextView
+                android:id="@+id/skin_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Change jelly skin" />
+
+            <ToggleButton
+                android:id="@+id/skin_textures_toggle"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/relative_layout_compression"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_skin"
+            android:layout_centerHorizontal="true">
+
+
+
+            <TextView
+                android:id="@+id/compression_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Compress textures" />
+
+            <ToggleButton
+                android:id="@+id/compress_textures_toggle"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/relative_layout_x_axis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_compression">
+
+
+
+            <TextView
+                android:id="@+id/invert_x_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Invert x axis" />
+
+            <ToggleButton
+                android:id="@+id/invert_x_toggle"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_y_axis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_x_axis">
+
+            <TextView
+                android:id="@+id/invert_y_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Invert y axis"/>
+
+
+            <ToggleButton
+                android:id="@+id/invert_y_toggle"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/relative_layout_change_axis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_y_axis">
+
+            <TextView
+                android:id="@+id/change_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Switch x and y axis."/>
+
+
+            <ToggleButton
+                android:id="@+id/change_axis_toggle"
+                android:layout_width="60sp"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/relative_layout_tilt_control"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_change_axis">
+
+            <TextView
+                android:id="@+id/tilt_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Tilt calibration: "/>
+
+            <TextView
+                android:id="@+id/seek_bar_value"
+               	android:layout_toRightOf="@+id/tilt_control"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+				android:layout_centerVertical="true"
+				android:textSize="20sp"
+
+                android:text="0.0" />
+            
+            <SeekBar
+             	android:id="@+id/tilt_control_seekbar"
+                android:layout_toRightOf="@+id/seek_bar_value"
+               
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+               	android:progress="90"
+               	android:max="180"
+
+				android:layout_centerVertical="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="15sp" />
+
+
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RGTI</string>
+    <string name="author">Jani and Ziga</string>
+    <string name="website">http://www.un-isrm.info</string>
+    
+    
+    <string name="menu_exit">Exit</string>
+    <string name="menu_restart">Restart LvL</string>
+</resources>

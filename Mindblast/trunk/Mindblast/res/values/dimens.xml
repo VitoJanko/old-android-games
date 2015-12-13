@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ena">1dp</dimen>
+    <dimen name="dva">2dp</dimen>
+    <dimen name="tri">3dp</dimen>
+    <dimen name="stiri">4dp</dimen>
+    <dimen name="pet">5dp</dimen>
+    <dimen name="setst">6dp</dimen>
+    <dimen name="sedem">7dp</dimen>
+    <dimen name="osem">8dp</dimen>
+    <dimen name="devet">9dp</dimen>
+    <dimen name="deset">10dp</dimen>
+    <dimen name="enajst">11dp</dimen>
+    <dimen name="dvanjast">12dp</dimen>
+    <dimen name="trinajst">13dp</dimen>
+    <dimen name="stirinajst">14dp</dimen>
+    <dimen name="petnajst">15dp</dimen>
+    <dimen name="sestnajst">16dp</dimen>
+    <dimen name="sedemnajst">17dp</dimen>
+    <dimen name="osemnajst">18dp</dimen>
+    <dimen name="devetnajst">19dp</dimen>
+    <dimen name="dvajset">20dp</dimen>
+    <dimen name="enaindvajset">21dp</dimen>
+    <dimen name="dvaindvajset">22dp</dimen>
+    <dimen name="triindvajset">23dp</dimen>
+    <dimen name="stiriindvajset">24dp</dimen>
+    <dimen name="petindvajset">25dp</dimen>
+    <dimen name="sestindvajset">26dp</dimen>
+    <dimen name="sedemindvajset">27dp</dimen>
+    <dimen name="osemindvajset">28dp</dimen>
+    <dimen name="devetindvajset">29dp</dimen>
+    <dimen name="trideset">30dp</dimen>
+    <dimen name="enaintrideset">31dp</dimen>
+    <dimen name="dvaintrideset">32dp</dimen>
+    <dimen name="triintrideset">33dp</dimen>
+    <dimen name="stiriintrideset">34dp</dimen>
+    <dimen name="petintrideset">35dp</dimen>
+    <dimen name="sestintrideset">36dp</dimen>
+    <dimen name="sedemintrideset">37dp</dimen>
+    <dimen name="osemintrideset">38dp</dimen>
+    <dimen name="devetintrideset">39dp</dimen>
+    <dimen name="stirideset">40dp</dimen>    
+    
+    <!--  TIC TAC TOE -->
+    <dimen name="tictaclaser">3dp</dimen>
+    <dimen name="pvp">22dp</dimen>
+    <dimen name="nextturn">20dp</dimen>
+    <dimen name="endmessage">30dp</dimen>
+    <dimen name="playagain">20dp</dimen>
+    <dimen name="wants_to_play_again">20dp</dimen>
+    <dimen name="waiting">20dp</dimen>
+    <dimen name="yes">20dp</dimen>
+    <dimen name="no">20dp</dimen>
+    <dimen name="player_vs_computer">30dp</dimen>
+    <dimen name="player_vs_player">30dp</dimen>
+    <dimen name="multiplayer_online">30dp</dimen>
+    <dimen name="chat">20dp</dimen>
+    <dimen name="nickname">35dp</dimen>  
+    <!--  //TIC TAC TOE\\ --> 
+    
+        
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="fill_parent"
+ android:background="#FFFFFF"
+  >
+ 
+
+  <TextView android:id="@+id/lobbytext"
+              android:layout_width="fill_parent"
+              android:layout_height="50dp"
+              android:layout_centerHorizontal="true"
+              android:background="#98b5f6"
+              android:textColor="#FFFFFF"
+              android:textSize="40dp"
+              android:shadowColor="#8fffbe"
+              android:shadowRadius="5"
+              android:shadowDx="4"
+              android:shadowDy="4"
+              android:gravity="center_vertical|center_horizontal"
+                           
+              /> 
+
+ 
+ <ListView android:id="@+id/listView1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+	android:layout_weight="2"
+	android:drawSelectorOnTop="false"
+	android:transcriptMode="alwaysScroll"
+	android:cacheColorHint="#FFFFFF"
+	android:layout_below="@id/lobbytext">
+	</ListView>
+ 
+</RelativeLayout>

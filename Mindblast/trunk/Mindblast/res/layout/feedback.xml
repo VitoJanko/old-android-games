@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+	 <Button android:id="@+id/Button01"
+	 android:layout_width="wrap_content" android:layout_height="wrap_content"
+	 android:layout_alignParentLeft="true" android:text="Submit" />
+
+	<ScrollView android:id="@+id/scrollView"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:layout_below="@id/Button01" >
+		
+		<LinearLayout 
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+ 		 android:orientation="vertical"
+ 		 android:layout_width="fill_parent"
+ 		 android:layout_height="fill_parent">
+			<CheckBox android:layout_height="wrap_content" android:id="@+id/checkBox1" android:layout_width="wrap_content" android:text="CheckBox"></CheckBox>
+		
+		<TextView android:id="@+id/intro"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		/>
+		
+		<TextView android:id="@+id/pros"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/intro" />
+		
+		   <EditText android:inputType="textMultiLine" android:id="@+id/inputText"
+ 			 android:singleLine="false"
+  			 android:layout_width="fill_parent" android:layout_height="wrap_content"
+  			 android:layout_below="@id/pros" >
+ 			 <requestFocus></requestFocus>
+ 		 </EditText>
+ 		 
+ 		 <TextView android:id="@+id/cons"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@id/inputText" />
+	
+		<EditText android:inputType="textMultiLine" android:id="@+id/inputText2"
+ 			 android:singleLine="false"
+  			 android:layout_width="fill_parent" android:layout_height="wrap_content"
+  			 android:layout_below="@id/cons" >
+ 			 <requestFocus></requestFocus>
+ 		 </EditText>
+	
+	</LinearLayout>
+	</ScrollView>
+	<Button android:text="Skip this time" android:layout_height="wrap_content" android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginRight="18dp"></Button>
+</RelativeLayout>
